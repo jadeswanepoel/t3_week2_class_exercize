@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville:wght@700&display=swap');
+
+/*--------------------------------------------  */
+/* global styles */
+
+/* fonts */
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Libre Baskerville', serif;
+    color: #183828;
+}
+p{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+
+
+/* spacing */
+.full-height{
+    height: 100vh;
+}
+
+
+/* -------------------------------------------- */
+/* components */
+button{
+    border: none;
+    padding: 16px 20px;
+    border-radius: 8px;
+    background-color: #183828;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+/* -------------------------------------------- */
+/* home page */
+.hero-image{
+    height: 90vh;
+    position: relative;
+    bottom: -100px;
+}
+
+
+
+/* -------------------------------------------- */
+/* bootstrap components overrides */
+/* navigation  bar */
+
+.nav-link{
+    font-family: 'Lato', sans-serif;
+    color: rgba(0, 0, 0,0.6); 
+}
+
+.nav-link:hover{
+    color: #183828;
+}
+
+.nav-link.active{
+    border-bottom: 2px solid #183828;
+    color: #183828;
+}
+
+
+/* carousel */
+.carousel-item{
+    background-color: #e6f2e9;
+}
+
+.carousel-control-prev ,.carousel-control-next {
+    top: auto;
+    right: auto;
+    left: 24px;
+    bottom: 24px;
+    width: auto;
+    background-color: white;
+    padding: 12px;
+    border-radius: 50%;
+
+}
+
+.carousel-control-prev{
+    left: 84px;
+}
+
+/* cards */
+.card{
+    border-radius: 150px 150px 12px 12px;
+    background: #f3f3f3;
+    text-align: center;
+    height: 440px;
+    border: none;
+}
+
+.card-img-top{
+    height: 320px;
+    margin: auto;
+    width: auto;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+.card-img-top.smal{
+    height: 200px;
+    
+}
+
+
+.card-text{
+    color: #183828;
+}
