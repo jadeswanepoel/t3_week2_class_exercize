@@ -88,3 +88,10 @@ $("#plantsContainer").on('click', '.card', function(){
     $(this).find(".card-img-top").toggleClass("small");
   
   });
+
+
+  $(document).ready(function() {
+    $(".remove-button").click(function() {
+      $(this).closest("tr").remove();
+    });
+  });

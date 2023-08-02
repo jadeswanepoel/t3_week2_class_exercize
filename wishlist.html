@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Class Exercise Plant Shop-Browse</title>
+    <title>Class Exercise Plant Shop</title>
 
     <!--Stylesheets-->
     
@@ -26,10 +26,10 @@
     <!-- navbar items -->
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="browse.html">Browse</a>
+              <a class="nav-link" href="browse.html">Browse</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="wishlist.html">Wishlist</a>
@@ -51,32 +51,66 @@
     </nav>
 
 
-    <div class="container mt-5 pt-5">
+    
 
-        <!-- header -->
-        <h2>Browse Plants</h2>
 
-        <!-- list of plant cards -->
-        <div class="row pt-5" id="plantsContainer">
-            <div class="col-4">
-
-                <template id="plantCardTemplate">
-                    <!-- card -->
-                <div class="card" >
-                    <img src="assets/plant1 (1).png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title" id="nameText">Ficus Tree</h5>
-                      <p class="card-text " id="priceText">R250</p>
-                      <p class="card-text" id="descriptionText">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      
-                    </div>
-                  </div>
-             </div>
-                </template>
-         
-        </div>
+  <table>
+    <div class="top-wishlist">
+        <h1>Plant Varieties</h1>
     </div>
+    
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Light</th>
+      <th>Water</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fern</td>
+      <td>Succulent</td>
+      <td>Full Sun</td>
+      <td>Regular</td>
+      <td><button class="remove-button">Remove</button></td>
+    </tr>
+    <tr>
+        <td>Lush Succulent</td>
+        <td>Succulent</td>
+        <td>Bright Light</td>
+        <td>Sparse</td>
+        <td><button class="remove-button">Remove</button></td>
+      </tr>
+      <tr>
+        <td>Peace Lily</td>
+        <td>Succulent</td>
+        <td>Partial Sun</td>
+        <td>Regular</td>
+        <td><button class="remove-button">Remove</button></td>
+      </tr>
+      <!-- Add more rows as needed -->
+    </tbody>
+  </table>
+   
 
+
+  <div class="card">
+    <img src="assets/leaf1.jpg" alt="Plant 1">
+    <h3>Beautiful Fern</h3>
+    <p>A stunning fern that adds a touch of elegance to any space.</p>
+  </div>
+  <div class="card">
+    <img src="assets/leaf2.jpg" alt="Plant 2">
+    <h3>Lush</h3>
+    <p>This vibrant succulent is easy to care for and brings a pop of color to your home.</p>
+  </div>
+  <div class="card">
+    <img src="assets/leaf3.jpg" alt="Plant 3">
+    <h3>Peace Lily</h3>
+    <p>The peace lily is known for its air-purifying qualities and graceful white blooms.</p>
+  </div>
 
 
     <!-- javascript -->
